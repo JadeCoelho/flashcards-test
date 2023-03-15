@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #eeeeee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #3e63dd;
+  color: #fff;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #577cf6;
+}
+
+.criar-card {
+  width: 100%;
+  height: 100%;
+  background-color: #2828294d;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.cx-criar {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 330px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0 #0000004a;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+.flashcards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.flashcard {
+  width: 370px;
+  min-height: 200px;
+  word-wrap: break-word;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0 #00000021;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flashcard h2 {
+  font-size: 1rem;
+}
+.flashcard h2:first-child {
+  user-select: none;
+}
+
+.obs {
+  position: static;
+  bottom: 0;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  color: #404040;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .flashcard {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cx-criar {
+    width: 100%;
+  }
+  .flashcard {
+    width: 100%;
+  }
+}
